@@ -1,4 +1,4 @@
-<h1><a href="https://eleventywebstarter.netlify.app"><strong>Eleventy Web Starter</strong></a></h1>
+<h1><a href="https://furye.ru"><strong>Personal site on GitHub Pages</strong></a> 🕚⚡️🎈🐀</h1>
 
 <em>Eleventy · Tailwind CSS · HTML · CSS · Javascript</em>
 
@@ -24,7 +24,6 @@
 	- TailwindCSS
 	- CSS Imports
 	- Autoprefixer 
-- PurgeCSS to remove unused CSS (set up for TailwindCSS by default) in production
 - HTML minified in production
 - CSS inlined and minified in production
 - [esbuild](https://esbuild.github.io/) used to bundle and minify scripts
@@ -56,17 +55,18 @@ npm run build
 
 ---
 
-## Deployment 
+## Deployment 👀
 
-You can host the production output on any web server or service you like and upload it via any method, it'll work. 
-
-If you don't have an existing place to host your site you should have a look at [Netlify](https://www.netlify.com), I can't recommend it enough. To get started you can hit the button below.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrissy-dev/eleventy-web-starter)
+Seach the deployment method to GH pages 
 
 ---
 
-#### Credits 
+## Comment to  files
+- package.json — 
+- postcss.config.js
+- twailwind.config.js — if you need custom classes in stylesheets. See the [Twialwind Documentation](https://tailwindcss.com/docs/configuration)
+
+### Credits 
 
 - [Eleventy](https://11ty.dev)
 - [TailwindCSS](https://tailwindcss.com/)
@@ -77,3 +77,5 @@ If you don't have an existing place to host your site you should have a look at 
 - [Luxon](https://moment.github.io/luxon/)
 - [NPM Run All](https://www.npmjs.com/package/npm-run-all)
 - [HTML Minifier](https://www.npmjs.com/package/html-minifier)
+
+### Thanks

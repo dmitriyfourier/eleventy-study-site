@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-study-site",
+	"name": "Dmitriy Fourier's 11ty site",
 	"version": "1.8.0",
-	"description": "Eleventy Web Starter is a lightweight Eleventy boilerplate utilising, ESBuild Tailwind and PostCSS",
+	"description": "Dmitriy Fourier's personal site is a lightweight Eleventy boilerplate utilising, ESBuild Tailwind and PostCSS",
 	"scripts": {
 		"clean": "del dist",
 		"dev:postcss": "postcss src/_assets/stylesheets/*.css -o src/static/styles.min.css --watch --verbose",
@@ -14,7 +14,7 @@
 		"start": "run-p dev:*",
 		"build": "run-s clean build:*"
 	},
-	"author": "Chris Collins",
+	"author": "Dmitriy Fourier",
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^1.0.1",
