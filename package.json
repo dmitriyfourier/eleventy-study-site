@@ -10,7 +10,7 @@
 		"build:postcss": "NODE_ENV=production postcss src/_assets/stylesheets/styles.css -o src/_includes/styles.min.css",
 		"build:11ty": "ELEVENTY_ENV=production eleventy",
 		"build:scripts": "esbuild src/_assets/scripts/app.js --bundle --minify --outfile=dist/static/app.min.js",
-		"deploy": "gh-pages -d dist", 
+		"deploy": "gh-pages -d dist",
 		"start": "run-p dev:*",
 		"build": "run-s clean build:*"
 	},
@@ -28,5 +28,8 @@
 		"postcss-cli": "^9.1.0",
 		"postcss-import": "^14.1.0",
 		"tailwindcss": "^3.0.24"
+	},
+	"dependencies": {
+		"git": "^0.1.5"
 	}
 }
