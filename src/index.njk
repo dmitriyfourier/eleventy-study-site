@@ -3,32 +3,119 @@ layout: base.njk
 title: Eleventy Web Starter - Eleventy, esbuild, Tailwind and PostCSS
 description: Eleventy Web Starter is a lightweight Eleventy boilerplate utilising esbuild, Tailwind CSS and Post CSS
 ---
-<section class="container max-w-screen-md">
-  <p>Руководитель продукта в&nbsp;<a  href="https://noboring-finance.ru"><span
-        class="c-link">Нескучных финансах<span></a>. Помогаю управлять бизнесом
-    на&nbsp;основе цифр. Курирую <a  href="https://vk.com/neighborhood20"><span
-        class="c-link">Добрососедство&nbsp;2.0</span></a>&nbsp;проект,
+<section class="container max-w-screen-md ml-14">
+  <p>Руководитель продукта в&nbsp;<a href="https://noboring-finance.ru"><span class="link">Нескучных финансах<span></a>.
+    Помогаю управлять бизнесом
+    на&nbsp;основе цифр. Курирую <a href="https://neighborliness.ru/"><span
+        class="link">Добрососедство&nbsp;2.0</span></a>&nbsp;проект,
     который помогает улучшить свой дом, двор и&nbsp;пдъезд. Пишу подкасты, и&nbsp;не&nbsp;теряю любопытства. Пишите
-    в&nbsp;Телеграм: <a  href="https://t.me/DmitriyFourier"><span
-        class="c-link">https://t.me/DmitriyFourier</span></a></p>
+    в&nbsp;Телеграм: <a href="https://t.me/DmitriyFourier"><span class="link">https://t.me/DmitriyFourier</span></a></p>
   <p class="text-cyan-700">
-    <a  href="https://twitter.com/dmitriyfourier" target="_blank" rel="noopener">
-        <span class="c-link">Твиттер</span></a>
-    <a class="pl-4 " href="https://www.instagram.com/dmitriyfourier" target="_blank" rel="noopener">
-        <span class=" c-link">Инстаграм</span></a>
-    <a class="pl-4" href="https://vk.com/dmitriyfourier" target="_blank"
-      rel="noopener">
-        <span class="c-link">Вконтакте</span></a>
-    <a class="pl-4 " href="https://t.me/furyeru" target="_blank" rel="noopener">
-        <span class="c-link">Телеграм</span></a>
+    <a href="{{ social.twi }}" target="_blank" rel="noopener">
+      <span class="link">Твиттер</span></a>
+    <a class="pl-4 " href="{{ social.inst }}" target="_blank" rel="noopener">
+      <span class="link">Инстаграм</span></a>
+    <a class="pl-4" href="{{ social.vk }}" target="_blank" rel="noopener">
+      <span class="link">Вконтакте</span></a>
+    <a class="pl-4 " href="{{ social.telegram }}" target="_blank" rel="noopener">
+      <span class="link">Телеграм</span></a>
   </p>
 </section>
 <section class=" pt-8">
-    <h1 class="text-3xl font-bold">Сделал</h1>
+  <h1>Сделал</h1>
 </section>
 <section class=" pt-8">
-    <h1 class="text-3xl font-bold">Наговорил</h1>
+  <h1><a href="/podcasts/">Наговорил</a></h1>
+  <div class="flex flex-wrap gap-8 w-8">
+    {%- for podcasts in collections.podcasts -%}
+    <div><img class="w-20" src="/static/i/podcasts-preview/{{ podcasts.data.podico }}" alt="{{ podcasts.data.title }}">
+    <p>{{ podcasts.data.title }}</p>
+    </div>
+    {%- endfor -%}
+    
+    <div>Два</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+    <div>Три</div>
+  </div>
 </section>
 <section class=" pt-8">
-    <h1 class="text-3xl font-bold">Написал</h1>
+  <h1>Написал</h1>
 </section>
+
+<section class="grid grid-cols-5 gap-4">
+    <div>
+    <h5>Нескучные финансы</h5>
+    <p><a target="_blank" rel="noopener" href="https://gazeta.noboring-finance.ru/5-stadiy">Пять стадий принятия
+        финансового факта</a></p>
+    <p><a target="_blank" rel="noopener" href="https://gazeta.noboring-finance.ru/who-is-finolog">Как финансовый
+        директор помогает бизнесу</a></p>
+    <p><a target="_blank" rel="noopener" href="https://gazeta.noboring-finance.ru/kak-nanyat">Как нанять специалиста
+        по&nbsp;финансам</a></p>
+    <p><a target="_blank" rel="noopener" href="https://gazeta.noboring-finance.ru/kogda-nanimat-finologa">Когда пора
+        нанять финансового директора</a></p>
+</div>
+<div>
+    <h5>Добрососедство&nbsp;2.0</h5>
+    <p><a target="_blank" rel="noopener"
+        href="https://journal.neighborliness.ru/all/chyi-interesy-uchityvat-pri-proektirovanii-dvora/">Чьи интересы
+        учитывать при проектировании двора</a></p>
+    <p><a target="_blank" rel="noopener" href="https://journal.neighborliness.ru/all/zachem-tszh-snimat-nps/">Зачем
+        ТСЖ снимать NPS</a></p>
+</div>
+<div>
+    <h5>Жиза</h5>
+    <p>Совместные статьи при поддержке редакторов и&nbsp;авторов журнала <a href="https://zhiza.evotor.ru/"
+        title="Жиза: Журнал Экворота">Жиза</a> </p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/massazhnaya-studiya-po-franshize-kak-poschitat-kogda-ona-okupitsya/">Массажная
+        студия по&nbsp;франшизе: как посчитать, когда она окупится</a></p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/skolko-vy-mozhete-vzyat-iz-kassy-schitaem-dengi-ot-prodazh-do-chistoj-pribyli-2/">Сколько
+        вы&nbsp;можете взять из&nbsp;кассы: считаем деньги от&nbsp;продаж до&nbsp;чистой прибыли</a></p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/debet-kredit-ebitda-raskladyvaem-finansy-biznesa-bez-neponyatnyx-slov/">Считаем
+        деньги: как вовремя понять, что бизнес идёт не&nbsp;так хорошо, как кажется</a></p>
+    <p><a target="_blank" rel="noopener" href="https://zhiza.evotor.ru/chi-dengi-u-vas-na-schyote/">Чьи деньги
+        у&nbsp;вас на&nbsp;счёте?</a></p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/gde-nazhat-chtoby-prodavat-bolshe-ishhem-tochku-rosta-vyruchki/">Где нажать,
+        чтобы продавать больше? Ищем точку роста выручки</a></p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/vlozhitsya-i-ne-pozhalet-schitaem-effektivnost-reklamnoj-kampanii-do-eyo-nachala/">Вложиться
+        и&nbsp;не&nbsp;пожалеть: считаем эффективность рекламной кампании до&nbsp;её&nbsp;начала</a></p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/peresypali-muki-zarabotali-menshe-uchimsya-kontrolirovat-effektivnost-proizvodstvennyx-zatrat/">Пересыпали
+        муки &rarr; заработали меньше: учимся контролировать эффективность производственных затрат</a></p>
+    <p><a target="_blank" rel="noopener"
+        href="https://zhiza.evotor.ru/kak-vybrat-na-chyom-sekonomit-v-pervuyu-ochered/">Как выбрать, на&nbsp;чём
+        сэкономить в&nbsp;первую очередь</a></p>
+</div>
+</section>
+

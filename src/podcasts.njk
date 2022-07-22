@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Подкасты Димы Фурье
+description: Eleventy Web Starter is a lightweight Eleventy boilerplate utilising esbuild, Tailwind CSS and Post CSS
+---
+<section class="pb-8 max-w-lg">
+    <h1>Наговорил</h1>
+    <p>Записываю подкасты на самые разные темы, тут и финансы, и домоуправление. В целом любло болтать в микрофон. Если хотите побыть моим соведущим, или поучаствовать в каком-то выпуске, или вы эксперт в каокй-то теме - пишите мне в Телеграм.</p>
+    <p>А пока вот, что я успел наговорить</p>
+</section>
+<section class="grid grid-cols-6 gap-x-6">
+    {%- for podcasts in collections.podcasts -%}
+    <a class="border hover:border-red-900" href="{{ podcasts.url }}">
+    <div class="">
+        <div class="py-4 px-4">
+            <img src="/static/i/podcasts-preview/{{ podcasts.data.preview }}" alt="{{ podcasts.data.title }}">
+            <h5>{{ podcasts.data.title }}</h5>
+            <p>{{ podcasts.data.desc_sm }}</p>
+        </div>
+    </div>
+</a>
+    {%- endfor -%}
+</section>

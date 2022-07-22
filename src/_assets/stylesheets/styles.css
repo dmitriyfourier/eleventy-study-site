@@ -1,6 +1,131 @@
 @import 'utils/_tailwind.css';
 @import 'utils/_accessibility.css';
 
-a {
-	@apply text-ws-blue-500 underline;
+/* typo */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+h1{
+  @apply font-semibold;
+  @apply text-3xl;
+  @apply pb-4;
+  @apply font-sans;
 }
+h5{
+  @apply text-lg;
+  @apply font-sans;
+  @apply font-semibold;
+}
+p{
+  @apply pb-3;
+}
+
+a:not([class]),
+.link,
+a:not([class]):link,
+.link:link {
+	@apply text-ws-link-main;
+	@apply border-b-ws-link-main_u;
+  @apply border-b;
+}
+a:not([class]):visited,
+.link:visited {
+	@apply text-ws-link-visited;
+	@apply text-ws-link-visited_u;
+}
+a:not([class]):hover,
+.link:hover,
+a:not([class]):focus,
+.link:focus {
+	@apply text-ws-link-focus;
+	@apply text-ws-link-focus_u;
+}
+a:not([class]):visited:hover,
+.link:visited:hover,
+a:not([class]):visited:focus,
+.link:visited:focus {
+  color: #bc4df8;
+  text-decoration-color: rgba(188, 77, 248, 0.25);
+}
+a:not([class]):active,
+.link:active {
+  color: #bc4df8;
+  text-decoration-color: rgba(188, 77, 248, 0.25);
+}
+.link-novisited,
+.link-novisited:link {
+  color: #0877db;
+  text-decoration-color: rgba(8, 119, 219, 0.25);
+}
+.link-novisited:visited {
+  color: #0877db;
+  text-decoration-color: rgba(8, 119, 219, 0.25);
+}
+.link-novisited:hover,
+.link-novisited:focus {
+  color: #2b9aff;
+  text-decoration-color: rgba(43, 154, 255, 0.25);
+}
+.link-novisited:visited:hover,
+.link-novisited:visited:focus {
+  color: #2b9aff;
+  text-decoration-color: rgba(43, 154, 255, 0.25);
+}
+.link-novisited:active {
+  color: #bc4df8;
+  text-decoration-color: rgba(188, 77, 248, 0.25);
+}
+.link-inherit,
+.link-inherit:link {
+  color: inherit;
+}
+.link-inherit:visited {
+  color: inherit;
+}
+.link-inherit:hover,
+.link-inherit:focus {
+  color: #2b9aff;
+  text-decoration-color: rgba(43, 154, 255, 0.25);
+}
+.link-inherit:visited:hover,
+.link-inherit:visited:focus {
+  color: #bc4df8;
+  text-decoration-color: rgba(188, 77, 248, 0.25);
+}
+.link-inherit:active {
+  color: #bc4df8;
+  text-decoration-color: rgba(188, 77, 248, 0.25);
+}
+.link,
+.link-novisited,
+.link-inherit,
+a:not([class]),
+.link:link,
+.link-novisited:link,
+.link-inherit:link,
+a:not([class]):link,
+.link:visited,
+.link-novisited:visited,
+.link-inherit:visited,
+a:not([class]):visited {
+  border-radius: 0.125em;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out, box-shadow 0.3s ease-out, text-decoration-color 0.3s ease-out;
+}
+.link:hover,
+.link-novisited:hover,
+.link-inherit:hover,
+a:not([class]):hover {
+  transition: color 0s, background-color 0s, border-color 0s, box-shadow 0s, text-decoration-color 0s;
+}
+.link:focus,
+.link-novisited:focus,
+.link-inherit:focus,
+a:not([class]):focus {
+  background: rgba(43, 154, 255, 0.2);
+  box-shadow: 0 0 0 0.1875em rgba(43, 154, 255, 0.2);
+  outline: none;
+}
+.link:not(a),
+.link-novisited:not(a),
+.link-inherit:not(a) {
+ @apply border-b;
+}
+
