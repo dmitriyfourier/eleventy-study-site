@@ -1,5 +1,5 @@
 {
-	"name": "Dmitriy Fourier's 11ty site",
+	"name": "eleventy-web-starter",
 	"version": "1.8.0",
 	"description": "Dmitriy Fourier's personal site is a lightweight Eleventy boilerplate utilising, ESBuild Tailwind and PostCSS",
 	"scripts": {
