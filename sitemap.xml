@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        
+        <url>
+            <loc>https://furye.ru/humans.txt</loc>
+            <lastmod>2022-07-22</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://furye.ru/</loc>
+            <lastmod>2022-07-22</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://furye.ru/podcasts/</loc>
+            <lastmod>2022-07-22</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://furye.ru/podcasts/ne-nauchili/</loc>
+            <lastmod>2022-07-22</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://furye.ru/podcasts/noboring-finance/</loc>
+            <lastmod>2022-07-22</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://furye.ru/podcasts/young-finance/</loc>
+            <lastmod>2022-07-22</lastmod>
+        </url>
+</urlset>

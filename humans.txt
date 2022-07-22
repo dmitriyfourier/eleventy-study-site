@@ -1,0 +1,9 @@
+
+/* TEAM */
+	Name: Dmitriy Fourier
+	Site: https://furye.ru
+Twitter: @dmitriyfourier
+
+
+/* SITE */
+	Doctype: HTML5
