@@ -2,7 +2,7 @@
 
 <em>Eleventy · Tailwind CSS · HTML · CSS · Javascript</em>
 
-<a href="https://app.netlify.com/sites/eleventywebstarter/deploys"><img src="https://api.netlify.com/api/v1/badges/27819fce-1c2b-4f30-ab30-5c0769f9734e/deploy-status"></a>
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Contents 	
 
